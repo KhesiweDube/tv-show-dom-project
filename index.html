@@ -9,8 +9,22 @@
   </head>
 
   <body>
-    <div id="root"></div>
+<main>
+  <div class="search-bar">
+  <form action="search-bar-form">
+    <input type="text"
+    class="search-box"
+    placeholder="Search-box"
+    onkeyup ="search()"/>
+    <p class = "Search-Result">Search Something</p>
+  </form>
+  </div>
+</main>
+    <section></section>
+    <div id="container" class="container"></div>
+    <!-- <div id="root"></div> -->
 
+    
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
 

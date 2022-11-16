@@ -1,3 +1,67 @@
-#root {
-  color: red;
+
+	
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: beige;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SEARCH BAR */
+.search-bar-form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.search-box {
+  width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+/* EPISODES DISPLAY */
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  margin: 50px 0;
+}
+
+.episode {
+  box-shadow: 4px 4px 10px rgba(171, 171, 171, 0.6);
+  border-radius: 10px;
+}
+
+.episode-title {
+  padding: 18px 40px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  background-color: darkgrey;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.episode-image {
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.episode-description {
+  padding: 20px 30px;
+  text-align: justify;
+}
+
+	
