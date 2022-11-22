@@ -65,4 +65,44 @@ function search() {
   } else {
     totalCount.innerHTML = "Search Something";
   }
+
 }
+// Select list
+
+document.querySelector("#episode-list").addEventListener(
+  "change",
+  function () {
+    const idd = this.options[this.selectedIndex].value;
+    if (idd !== "default") {
+      const requiredElement = document.getElementById(idd);
+      const positions = requiredElement.getBoundingClientRect();
+      window.scrollTo(positions.x, positions.y);
+    }
+  },
+  false
+);
+
+document.querySelector("#show-list").addEventListener(
+  "change",
+  function () {
+    const idd = this.options[this.selectedIndex].value;
+    setup(idd);
+  },
+  false
+);
+
+function setShows() {
+  const showContainer = document.getElementById("show-list");
+  const shows = getAllShows();
+  shows.forEach((item) => {
+    const opt = document.createElement("option");
+    const optLink = document.createElement("a");
+    // console.log(item._links.self.href);
+    opt.value = item._links.self.href + "/episodes";
+    optLink.innerHTML = item.name;
+    opt.appendChild(optLink);
+    showContainer.appendChild(opt);
+  });
+}
+
+	
