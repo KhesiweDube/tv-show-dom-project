@@ -1,3 +1,91 @@
-#root {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section--quick-result {
+  display: flex;
+  gap: 40px;
+}
+
+.qs {
+  align-items: center;
+  margin: 50px 0;
+}
+
+.select--style {
+  width: 300px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+/* SEARCH BAR */
+.search-bar-form {
+  display: flex;
+  gap: 30px;
+}
+
+.search-box {
+  width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+/* EPISODES DISPLAY */
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  margin: 50px 0;
+}
+
+.episode {
+  box-shadow: 4px 4px 10px rgba(171, 171, 171, 0.6);
+  border-radius: 10px;
+}
+
+.episode-title {
+  padding: 18px 40px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(176, 229, 241);
+  transition: 0.5s;
+}
+
+.episode-title:hover {
+  background-color: rgb(119, 218, 241);
+}
+
+.episode-image {
+  width: 100%;
+  padding: 20px 40px;
+  transition: 0.5s;
+}
+
+.episode-image:hover {
+  scale: 1.28;
+}
+
+.episode-description {
+  padding: 20px 30px;
+  text-align: justify;
+}
+
+	

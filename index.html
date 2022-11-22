@@ -3,19 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
+    <title>TV Show Project | Khesiwe Dube</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="root">
-    </div>
+    <main>
+      <section class="section--quick-result">
+        <div class="show-list qs">
+          <select name="select-show" id="show-list" class="select--style">
+            <option value="default">Select to choose</option>
+          </select>
+        </div>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+        <div class="episode-list qs">
+          <select name="select-episode" id="episode-list" class="select--style">
+            <option value="default">Select to choose</option>
+          </select>
+        </div>
+        <div class="search-bar qs">
+          <form action="#" class="search-bar-form">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search"
+              onkeyup="search()"
+            />
+            <p class="search-result">Search Something</p>
+          </form>
+        </div>
+      </section>
+      <section class="section--episode-displays">
+        <div id="container" class="container">
+          <!-- adding EPISODES  -->
+          <!-- <div class="episode">
+        <h2 class="episode-title">Winter is coming-S01E02</h2>
+        <img
+          class="episode-image"
+          src="http://static.tvmaze.com/uploads/images/medium_landscape/1/2668.jpg"
+          alt=""
+        />
+        <p class="episode-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+          quos, molestias reprehenderit nihil aliquam ad doloremque reiciendis
+          perferendis corrupti id nostrum quia odit soluta eveniet nobis eaque
+          quasi ea. Incidunt!
+        </p>
+      </div> -->
+        </div>
+      </section>
+    </main>
+    <!-- Creating function called getAllEpisodes() which returns all episodes -->
+    <script src="shows.js"></script>
     <script src="episodes.js"></script>
 
-    <!-- Loads YOUR javascript code -->
+    
     <script src="script.js"></script>
   </body>
 </html>
+
+	
